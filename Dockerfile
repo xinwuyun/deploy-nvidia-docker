@@ -1,4 +1,6 @@
 FROM nvidia/cuda:12.1.1-base-ubuntu22.04
+ENV NVIDIA_VISIBLE_DEVICES all
+ENV NVIDIA_DRIVER_CAPABILITIES compute,utility,graphics
 
 LABEL com.nvidia.volumes.needed="nvidia_driver"
 
